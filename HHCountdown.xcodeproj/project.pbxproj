@@ -13,6 +13,7 @@
 		FE33E1951F298617003BC178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1931F298617003BC178 /* Main.storyboard */; };
 		FE33E1971F298617003BC178 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1961F298617003BC178 /* Assets.xcassets */; };
 		FE33E19A1F298617003BC178 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE33E1981F298617003BC178 /* LaunchScreen.storyboard */; };
+		FE33E1A71F298871003BC178 /* HHCountdowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE33E1A61F298871003BC178 /* HHCountdowLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FE33E1961F298617003BC178 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE33E1991F298617003BC178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE33E19B1F298617003BC178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE33E1A51F298871003BC178 /* HHCountdowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHCountdowLabel.h; sourceTree = "<group>"; };
+		FE33E1A61F298871003BC178 /* HHCountdowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHCountdowLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		FE33E1891F298617003BC178 /* HHCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				FE33E1A11F2987D1003BC178 /* CountdownLabel */,
 				FE33E18D1F298617003BC178 /* AppDelegate.h */,
 				FE33E18E1F298617003BC178 /* AppDelegate.m */,
 				FE33E1901F298617003BC178 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				FE33E18B1F298617003BC178 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE33E1A11F2987D1003BC178 /* CountdownLabel */ = {
+			isa = PBXGroup;
+			children = (
+				FE33E1A51F298871003BC178 /* HHCountdowLabel.h */,
+				FE33E1A61F298871003BC178 /* HHCountdowLabel.m */,
+			);
+			path = CountdownLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					FE33E1861F298617003BC178 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2M227336GQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +167,7 @@
 				FE33E1921F298617003BC178 /* ViewController.m in Sources */,
 				FE33E18F1F298617003BC178 /* AppDelegate.m in Sources */,
 				FE33E18C1F298617003BC178 /* main.m in Sources */,
+				FE33E1A71F298871003BC178 /* HHCountdowLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2M227336GQ;
 				INFOPLIST_FILE = HHCountdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.find.HHCountdown;
@@ -285,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2M227336GQ;
 				INFOPLIST_FILE = HHCountdown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.find.HHCountdown;
