@@ -12,6 +12,7 @@
 //开始倒计时时间
 @property (nonatomic, assign) int count;
 
+- (instancetype)initWithFrame:(CGRect)frame;
 //执行这个方法开始倒计时
 - (void)startCount;
 @end
