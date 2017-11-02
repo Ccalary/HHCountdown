@@ -16,7 +16,8 @@
     countdownLabel.textAlignment = NSTextAlignmentCenter;
     countdownLabel.textColor = [UIColor whiteColor];
     countdownLabel.font =  [UIFont systemFontOfSize:25];
-    [self.view addSubview:countdownLabel];
+ // countdownLabel.count = 3; //设置倒计时时间，默认是3 
+    [self.view addSubview:countdownLabel];
     
     //可以在合适的地方 －开始倒计时
     [countdownLabel startCount];
