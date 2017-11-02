@@ -10,8 +10,6 @@
 #import "HHCountdowLabel.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet HHCountdowLabel *countdownLabel;
-
 @end
 
 @implementation ViewController
@@ -30,7 +28,14 @@
 //321倒计时
 - (IBAction)ButtonAction:(UIButton *)sender {
     
-    [_countdownLabel startCount];
+    HHCountdowLabel *countLabel = [[HHCountdowLabel alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    countLabel.center = self.view.center;
+    countLabel.font = [UIFont boldSystemFontOfSize:18];
+    countLabel.textColor = [UIColor blueColor];
+    countLabel.count = 5; //不设置的话，默认是3
+    [self.view addSubview:countLabel];
+    
+    [countLabel startCount];
     
 }
 
